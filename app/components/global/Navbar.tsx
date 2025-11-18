@@ -23,6 +23,10 @@ export default function Navbar() {
       title: "T.I.L",
       href: "/til",
     },
+    {
+      title: "Contact",
+      href: "/contact",
+    },
   ];
 
   return (

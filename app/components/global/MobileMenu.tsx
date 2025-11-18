@@ -9,6 +9,7 @@ import {
   HiLightBulb,
   HiOutlineX,
   HiUser,
+  HiMail,
 } from "react-icons/hi";
 import Logo from "../../../public/logo.png";
 
@@ -34,6 +35,11 @@ export default function MobileMenu() {
       title: "TIL",
       href: "/til",
       icon: HiLightBulb,
+    },
+    {
+      title: "Contact",
+      href: "/contact",
+      icon: HiMail,
     },
   ];
 

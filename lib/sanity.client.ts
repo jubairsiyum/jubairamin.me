@@ -14,6 +14,9 @@ const config: ClientConfig = {
 
 const client = createClient(config);
 
+// Export client for write operations (like contact form submissions)
+export const sanityClient = client;
+
 export async function sanityFetch<QueryResponse>({
   query,
   qParams = {},

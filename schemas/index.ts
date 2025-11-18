@@ -5,6 +5,7 @@ import post from "./post";
 import author from "./author";
 import heroe from "./heroe";
 import til from "./til";
+import contact from "./contact";
 import { youtube } from "./youtube";
 import { table } from "./table";
 import blockContent from "./blockContent";
@@ -16,6 +17,7 @@ export const schemaTypes = [
   project,
   post,
   til,
+  contact,
   author,
   heroe,
 

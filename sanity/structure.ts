@@ -1,5 +1,5 @@
 import type {StructureResolver} from 'sanity/structure'
-import { BiBookOpen, BiBriefcase, BiUser, BiTrophy } from 'react-icons/bi'
+import { BiBookOpen, BiBriefcase, BiUser, BiTrophy, BiEnvelope } from 'react-icons/bi'
 import { HiLightBulb } from 'react-icons/hi'
 
 // https://www.sanity.io/docs/structure-builder-cheat-sheet
@@ -59,6 +59,19 @@ export const structure: StructureResolver = (S) =>
         .child(
           S.documentTypeList('job')
             .title('Work Experience')
+        ),
+
+      S.divider(),
+
+      // Contact Submissions
+      S.listItem()
+        .title('Contact Submissions')
+        .icon(BiEnvelope)
+        .child(
+          S.documentTypeList('contact')
+            .title('Contact Submissions')
+            .filter('_type == "contact"')
+            .defaultOrdering([{field: 'submittedAt', direction: 'desc'}])
         ),
 
       S.divider(),
