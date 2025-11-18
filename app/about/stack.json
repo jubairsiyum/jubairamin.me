@@ -11,6 +11,10 @@
         "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg"
       },
       {
+        "name": "Express.js",
+        "logo": "https://cdn.worldvectorlogo.com/logos/expressjs.svg"
+      },
+      {
         "name": "REST API",
         "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"
       },
@@ -38,6 +42,14 @@
       {
         "name": "WooCommerce",
         "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/woocommerce/woocommerce-original.svg"
+      },
+      {
+        "name": "Shopify",
+        "logo": "https://cdn.shopify.com/shopifycloud/brochure/assets/brand-assets/shopify-logo-inverted-primary-logo-bdc6ddd67862d9bb1f8c559e1bb50dd233112ac57b29cac2edcf17ed2e1fe6fa.svg"
+      },
+      {
+        "name": "FilamentPHP",
+        "logo": "https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/filamentphp/filamentphp-original.svg"
       }
     ]
   },
@@ -72,7 +84,15 @@
       {
         "name": "SQL",
         "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azuresqldatabase/azuresqldatabase-original.svg"
-      }
+      },
+        {
+            "name": "SQLite",
+            "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg"
+        },
+        {
+            "name": "PostgreSQL",
+            "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+        }
     ]
   },
   {
@@ -85,6 +105,14 @@
       {
         "name": "Tailwind CSS",
         "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+      },
+      {
+        "name": "React",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+      },
+      {
+        "name": "Next.js",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
       },
       {
         "name": "JavaScript",
@@ -103,6 +131,18 @@
   {
     "category": "Tools & Workflow",
     "skills": [
+        {
+        "name": "VS Code",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+      },
+      {
+        "name": "Cursor",
+        "logo": "https://cursor.com/assets/images/logo.svg"
+      },
+      {
+        "name": "PhpStorm",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/phpstorm/phpstorm-original.svg"
+      },
       {
         "name": "Git",
         "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
@@ -118,6 +158,18 @@
       {
         "name": "PHPUnit",
         "logo": "https://cdn.worldvectorlogo.com/logos/phpunit.svg"
+      },
+      {
+        "name": "Laragon",
+        "logo": "https://cdn.worldvectorlogo.com/logos/laragon.svg"
+      },
+      {
+        "name": "VM Ware",
+        "logo": "https://cdn.worldvectorlogo.com/logos/vmware.svg"
+      },
+      {
+        "name": "DB Visualizer",
+        "logo": "https://www.dbvis.com/wp-content/uploads/2023/08/DbVisualizerBadgeThumb.svg"
       }
     ]
   }
