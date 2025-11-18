@@ -7,6 +7,13 @@ export default function PageLoader() {
   const [loading, setLoading] = useState(false);
   const pathname = usePathname();
 
+  // Get page name from pathname
+  const getPageName = () => {
+    if (pathname === "/") return "home";
+    const segments = pathname.split("/").filter(Boolean);
+    return segments[0] || "page";
+  };
+
   useEffect(() => {
     // Show loader immediately on route change
     setLoading(true);
@@ -70,7 +77,7 @@ export default function PageLoader() {
           <div className="p-6 font-mono text-sm space-y-2 min-h-[200px]">
             <div className="flex items-center gap-2">
               <span className="text-green-500 dark:text-green-400">$</span>
-              <span className="dark:text-zinc-400 text-zinc-600">npm run load-page</span>
+              <span className="dark:text-zinc-400 text-zinc-600">npm run load:{getPageName()}</span>
             </div>
             
             <div className="pl-4 space-y-1 mt-3">
