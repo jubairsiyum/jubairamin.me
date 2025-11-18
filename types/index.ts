@@ -97,3 +97,39 @@ export type HeroeType = {
   url: string;
   met: boolean;
 };
+
+export type TILType = {
+  _id: string;
+  _createdAt: string;
+  _updatedAt?: string;
+  title: string;
+  slug: string;
+  summary: string;
+  category: string;
+  tags: string[];
+  difficulty: "beginner" | "intermediate" | "advanced";
+  date: string;
+  body: PortableTextBlock[];
+  codeExample?: {
+    code: string;
+    language: string;
+    filename?: string;
+  };
+  resources?: Array<{
+    title: string;
+    url: string;
+  }>;
+  relatedTo?: {
+    title: string;
+    slug: string;
+  };
+  author: {
+    name: string;
+    photo: {
+      image: string;
+      alt: string;
+    };
+  };
+  featured: boolean;
+  isPublished: boolean;
+};

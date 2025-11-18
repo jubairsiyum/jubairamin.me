@@ -100,3 +100,60 @@ export const singlePostQuery = groq`*[_type == "Post" && slug.current == $slug][
 }`;
 
 export const heroesQuery = groq`*[_type == "heroe"] | order(_createdAt asc) { _id, _createdAt, name, url, met }`;
+
+// TIL Queries
+const tilField = groq`
+  _id,
+  _createdAt,
+  title,
+  "slug": slug.current,
+  summary,
+  category,
+  tags,
+  difficulty,
+  date,
+  featured,
+  isPublished
+`;
+
+export const tilsQuery = groq`*[_type == "til" && isPublished == true] | order(date desc){
+  ${tilField},
+  "author": author-> {
+    name, 
+    photo {
+      "image": asset->url,
+      alt
+    }
+  }
+}`;
+
+export const featuredTilsQuery = groq`*[_type == "til" && isPublished == true && featured == true] | order(date desc) [0...6] {
+  ${tilField}
+}`;
+
+export const tilsByCategoryQuery = groq`*[_type == "til" && isPublished == true && category == $category] | order(date desc){
+  ${tilField}
+}`;
+
+export const singleTilQuery = groq`*[_type == "til" && slug.current == $slug][0]{
+  ${tilField},
+  _updatedAt,
+  body,
+  codeExample,
+  resources,
+  "relatedTo": relatedTo-> {
+    title,
+    "slug": slug.current
+  },
+  "author": author-> {
+    name, 
+    photo {
+      "image": asset->url,
+      alt
+    }
+  }
+}`;
+
+export const tilCategoriesQuery = groq`*[_type == "til" && isPublished == true] | order(category asc) {
+  category
+}`;

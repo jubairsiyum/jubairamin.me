@@ -20,8 +20,8 @@ export default function Navbar() {
       href: "/blog",
     },
     {
-      title: "Photos",
-      href: "/photos",
+      title: "T.I.L",
+      href: "/til",
     },
   ];
 
