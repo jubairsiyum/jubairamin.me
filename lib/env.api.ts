@@ -23,8 +23,8 @@ export const apiVersion =
   process.env.NEXT_PUBLIC_SANITY_API_VERSION || "2023-07-21";
 
 // Optional: Giscus comments configuration
+export const giscusRepo = (process.env.NEXT_PUBLIC_GISCUS_REPO || "") as `${string}/${string}`;
 export const giscusRepoId = process.env.NEXT_PUBLIC_GISCUS_REPOID || "";
-
 export const giscusCategoryId = process.env.NEXT_PUBLIC_GISCUS_CATEGORYID || "";
 
 // Optional: Umami analytics configuration

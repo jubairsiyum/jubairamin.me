@@ -22,33 +22,33 @@ export default async function Posts() {
   return (
     <section>
       {posts.length > 0 ? (
-        <div className="flex flex-col lg:max-w-[950px] max-w-full lg:gap-y-8 gap-y-12 mb-12">
+        <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 mb-12">
           {posts.map((post) =>
             post.isPublished !== true ? null : (
               <article key={post._id}>
                 <Link
                   href={`/blog/${post.slug}`}
-                  className="flex lg:flex-row flex-col lg:items-center items-start gap-8 dark:bg-primary-bg bg-secondary-bg p-6 rounded-lg border dark:border-zinc-800 border-zinc-200 group"
+                  className="group flex flex-col h-full bg-white dark:bg-zinc-900 border-2 border-zinc-300 dark:border-zinc-800 hover:border-zinc-900 dark:hover:border-white rounded-lg overflow-hidden transition-all duration-200 hover:scale-[1.02] hover:shadow-xl"
                 >
-                  <div className="relative lg:w-[450px] lg:h-52 w-full h-56 overflow-clip">
+                  <div className="relative w-full h-64 overflow-clip">
                     <Image
                       src={post.coverImage?.image || fallbackImage}
-                      className="dark:bg-zinc-800 bg-zinc-100 rounded-md object-cover group-hover:scale-125 duration-300"
+                      className="dark:bg-zinc-800 bg-zinc-100 object-cover group-hover:scale-110 duration-300"
                       alt={post.coverImage?.alt || post.title}
                       layout="fill"
                       placeholder={post.coverImage ? "blur" : "empty"}
                       blurDataURL={post.coverImage?.lqip || ""}
                     />
                   </div>
-                  <div className="max-w-lg">
-                    <h2 className="max-w-sm text-2xl font-semibold tracking-tight mb-4">
+                  <div className="p-6 flex-1 flex flex-col">
+                    <h2 className="text-2xl font-bold tracking-tight mb-3 group-hover:text-blue-500 transition-colors">
                       {post.title}
                     </h2>
-                    <p className="dark:text-zinc-400 text-zinc-600 text-[0.95rem]">
+                    <p className="dark:text-zinc-400 text-zinc-600 text-base leading-relaxed flex-1">
                       {post.description}
                     </p>
-                    <div className="flex items-center gap-x-4 mt-3 text-sm">
-                      <div className="flex items-center gap-x-2">
+                    <div className="flex items-center gap-x-4 mt-4 pt-4 border-t border-zinc-300 dark:border-zinc-800 text-sm font-mono">
+                      <div className="flex items-center gap-x-2 dark:text-zinc-500 text-zinc-500">
                         <HiCalendar />
                         <time
                           dateTime={post.date ? post.date : post._createdAt}
@@ -58,7 +58,7 @@ export default async function Posts() {
                             : formatDate(post._createdAt)}
                         </time>
                       </div>
-                      <div className="flex items-center gap-x-2">
+                      <div className="flex items-center gap-x-2 dark:text-zinc-500 text-zinc-500">
                         <BiSolidTime />
                         <div className="">
                           {readTime(toPlainText(post.body))}
