@@ -3,7 +3,7 @@ import UnmountStudio from "./Unmount";
 export default function Footer() {
   return (
     <UnmountStudio>
-      <footer className="relative mt-32 border-t-2 dark:border-zinc-800 border-zinc-300">
+      <footer className="relative border-t-2 dark:border-zinc-800 border-zinc-300">
         {/* Grid pattern background */}
         <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none opacity-30">
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
