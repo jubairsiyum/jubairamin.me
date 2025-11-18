@@ -5,7 +5,7 @@ import type { ProfileType } from "@/types";
 import { PortableText } from "@portabletext/react";
 import { BiEnvelope, BiLinkExternal, BiSolidDownload } from "react-icons/bi";
 import { CustomPortableText } from "../components/shared/CustomPortableText";
-import Usage from "../components/pages/Usage";
+import TechStack from "../components/pages/TechStack";
 import { Slide } from "../animation/Slide";
 import { FadeIn } from "../animation/FadeIn";
 import { ScaleIn } from "../animation/ScaleIn";
@@ -216,10 +216,10 @@ export default async function About() {
           </aside>
         </section>
 
-        {/* Usage Section - Full Width */}
+        {/* Tech Stack Section - Full Width */}
         <FadeIn delay={0.5}>
           <div className="border-t-2 border-zinc-300 dark:border-zinc-800 pt-20">
-            <Usage />
+            <TechStack />
           </div>
         </FadeIn>
       </div>

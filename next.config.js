@@ -11,6 +11,8 @@ const nextConfig = {
       { hostname: "res.cloudinary.com" },
       { hostname: "www.google.com" },
       { hostname: "images.unsplash.com" },
+      { hostname: "cdn.jsdelivr.net" },
+      { hostname: "cdn.simpleicons.org" },
     ],
   },
 };

@@ -1,0 +1,124 @@
+[
+  {
+    "category": "Backend & Architecture",
+    "skills": [
+      {
+        "name": "PHP",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+      },
+      {
+        "name": "Laravel",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg"
+      },
+      {
+        "name": "REST API",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"
+      },
+      {
+        "name": "Redis",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"
+      },
+      {
+        "name": "Node.js",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+      }
+    ]
+  },
+  {
+    "category": "CMS & No-Code",
+    "skills": [
+      {
+        "name": "WordPress",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg"
+      },
+      {
+        "name": "Elementor Pro",
+        "logo": "https://elementor.com/wp-content/uploads/2025/09/full-logotype.svg"
+      },
+      {
+        "name": "WooCommerce",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/woocommerce/woocommerce-original.svg"
+      }
+    ]
+  },
+  {
+    "category": "DevOps & Cloud",
+    "skills": [
+      {
+        "name": "Docker",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+      },
+      {
+        "name": "Linux",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+      },
+      {
+        "name": "Apache",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg"
+      },
+      {
+        "name": "Nginx",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg"
+      }
+    ]
+  },
+  {
+    "category": "Database",
+    "skills": [
+      {
+        "name": "MySQL",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+      },
+      {
+        "name": "SQL",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azuresqldatabase/azuresqldatabase-original.svg"
+      }
+    ]
+  },
+  {
+    "category": "Frontend & UI",
+    "skills": [
+      {
+        "name": "Vue.js",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+      },
+      {
+        "name": "Tailwind CSS",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+      },
+      {
+        "name": "JavaScript",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+      },
+      {
+        "name": "Bootstrap",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+      },
+      {
+        "name": "HTML5",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+      }
+    ]
+  },
+  {
+    "category": "Tools & Workflow",
+    "skills": [
+      {
+        "name": "Git",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+      },
+      {
+        "name": "Composer",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg"
+      },
+      {
+        "name": "Postman",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg"
+      },
+      {
+        "name": "PHPUnit",
+        "logo": "https://cdn.worldvectorlogo.com/logos/phpunit.svg"
+      }
+    ]
+  }
+]
