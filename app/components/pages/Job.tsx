@@ -41,9 +41,9 @@ export default async function Job() {
             {jobs.map((job) => (
               <div
                 key={job._id}
-                className="group flex items-start gap-x-6 p-6 bg-white dark:bg-zinc-900 border-2 border-zinc-300 dark:border-zinc-800 hover:border-zinc-900 dark:hover:border-white rounded-lg transition-all duration-200 hover:scale-[1.02]"
+                className="group flex items-start gap-x-4 sm:gap-x-6 p-4 sm:p-6 bg-white dark:bg-zinc-900 border-2 border-zinc-300 dark:border-zinc-800 hover:border-zinc-900 dark:hover:border-white rounded-lg transition-all duration-200 hover:scale-[1.02]"
               >
-                <div className="grid place-items-center bg-zinc-100 dark:bg-zinc-800 border-2 border-zinc-300 dark:border-zinc-700 min-h-[80px] min-w-[80px] p-3 rounded-lg overflow-clip flex-shrink-0">
+                <div className="grid place-items-center bg-zinc-100 dark:bg-zinc-800 border-2 border-zinc-300 dark:border-zinc-700 min-h-[64px] min-w-[64px] sm:min-h-[80px] sm:min-w-[80px] p-2 sm:p-3 rounded-lg overflow-clip flex-shrink-0">
                   <RefLink href={job.url}>
                     <Image
                       src={job.logo}
@@ -54,7 +54,7 @@ export default async function Job() {
                     />
                   </RefLink>
                 </div>
-                <div className="flex flex-col items-start flex-1">
+                <div className="flex flex-col items-start flex-1 min-w-0">
                   <h3 className="text-xl font-bold tracking-tight mb-1">{job.name}</h3>
                   <p className="font-mono text-sm dark:text-zinc-400 text-zinc-600">{job.jobTitle}</p>
                   <time className="text-xs font-mono dark:text-zinc-500 text-zinc-500 mt-3 tracking-wider uppercase">

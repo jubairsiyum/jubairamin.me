@@ -20,7 +20,7 @@ const options = {
     "Jubair Amin is a Software Developer and Technical Writer who is passionate about building solutions and contributing to open source communities",
   url: "https://jubairamin.me",
   ogImage:
-    "https://res.cloudinary.com/victoreke/image/upload/v1692635746/victoreke/og.png",
+    "https://res.cloudinary.com/jubairamin/image/upload/v1763562854/Jubair_amin_xggdyo.png",
 };
 
 export const metadata: Metadata = {

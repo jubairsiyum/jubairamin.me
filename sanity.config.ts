@@ -8,7 +8,7 @@ import { projectId, dataset } from "./lib/env.api";
 import { structure } from "./sanity/structure";
 
 export default defineConfig({
-  name: "victoreke",
+  name: "jubairamin",
   title: "jubairamin.me",
   basePath: "/studio",
   projectId,

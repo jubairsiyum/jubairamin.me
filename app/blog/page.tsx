@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     url: "https://jubairamin.me/blog",
     description: "Read latest stories from Jubair Amin's Blog",
     images:
-      "https://res.cloudinary.com/victoreke/image/upload/v1692636087/victoreke/blog.png",
+      "https://res.cloudinary.com/jubairamin/image/upload/v1763563395/blog_xkuntv.png",
   },
 };
 

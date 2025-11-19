@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     url: "https://jubairamin.me/projects",
     description: "Explore projects built by Jubair Amin",
     images:
-      "https://res.cloudinary.com/victoreke/image/upload/v1692636087/victoreke/projects.png",
+      "https://res.cloudinary.com/jubairamin/image/upload/v1763563263/projects_h5a9hf.png",
   },
 };
 
