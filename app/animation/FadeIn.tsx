@@ -1,8 +1,8 @@
 "use client";
-import { motion, useInView, useAnimation, AnimationProps } from "framer-motion";
+import { motion, useInView, useAnimation } from "framer-motion";
 import { useRef, useEffect, RefObject } from "react";
 
-interface FadeInProps extends AnimationProps {
+interface FadeInProps {
   children: React.ReactNode;
   delay?: number;
   className?: string;
