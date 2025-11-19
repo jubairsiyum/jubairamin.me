@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description:
       "Learn more about my skills, experience and technical background",
     images:
-      "https://jubairamin.me/api/og?title=About Jubair Amin - Backend Developer | Building Scalable Systems",
+      "https://res.cloudinary.com/jubairamin/image/upload/v1763562854/Jubair_amin_xggdyo.png",
   },
 };
 

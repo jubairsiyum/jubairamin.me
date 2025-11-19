@@ -67,19 +67,21 @@ export default function MobileMenu() {
         )}
       </button>
 
-      {/* Backdrop */}
-      <div
-        className={`md:hidden fixed inset-0 z-40 bg-zinc-900/20 dark:bg-zinc-950/40 backdrop-blur-sm transition-opacity duration-300 ${
-          navShow ? "opacity-100" : "opacity-0 pointer-events-none"
-        }`}
-        onClick={onToggleNav}
-      />
+      {/* Backdrop - covers entire screen */}
+      {navShow && (
+        <div
+          className="md:hidden fixed inset-0 z-40 bg-zinc-900/20 dark:bg-zinc-950/40 backdrop-blur-sm"
+          onClick={onToggleNav}
+          aria-hidden="true"
+        />
+      )}
 
       {/* Mobile Menu Dropdown */}
       <nav
         className={`md:hidden fixed left-4 right-4 top-[4.5rem] z-50 backdrop-blur-xl bg-white/95 dark:bg-zinc-900/95 border-2 border-zinc-300/50 dark:border-zinc-700/50 rounded-xl shadow-2xl shadow-zinc-200/50 dark:shadow-zinc-950/80 overflow-hidden transition-all duration-300 origin-top ${
           navShow ? "opacity-100 scale-100 translate-y-0" : "opacity-0 scale-95 -translate-y-4 pointer-events-none"
         }`}
+        onClick={(e) => e.stopPropagation()}
       >
         {/* Terminal-style header */}
         <div className="px-4 py-2.5 border-b border-zinc-200 dark:border-zinc-800 bg-zinc-100/50 dark:bg-zinc-950/50">

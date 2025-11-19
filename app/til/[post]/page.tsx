@@ -80,7 +80,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: `${til.title} | TIL`,
       url: `https://jubairamin.me/til/${til.slug}`,
       description: til.summary,
-      images: `https://jubairamin.me/api/og?title=${encodeURIComponent(til.title)}`,
+      images: `https://res.cloudinary.com/jubairamin/image/upload/v1763562854/Jubair_amin_xggdyo.png`,
     },
   };
 }

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     url: "https://jubairamin.me/til",
     description:
       "Quick learnings and insights from daily backend development exploration. Bite-sized knowledge from building with PHP, Laravel, MySQL, and more.",
-    images: "https://jubairamin.me/api/og?title=Today I Learned",
+    images: "https://res.cloudinary.com/jubairamin/image/upload/v1763562854/Jubair_amin_xggdyo.png",
   },
 };
 
