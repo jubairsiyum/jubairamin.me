@@ -12,9 +12,9 @@ import { HiLightBulb } from "react-icons/hi";
 import { notFound } from "next/navigation";
 
 type Props = {
-  params: {
+  params: Promise<{
     post: string;
-  };
+  }>;
 };
 
 const categoryColors: Record<string, string> = {
@@ -59,7 +59,7 @@ const difficultyBadges: Record<string, { color: string; label: string }> = {
 
 // Generate metadata for SEO
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const slug = params.post;
+  const { post: slug } = await params;
   const til: TILType = await sanityFetch({
     query: singleTilQuery,
     tags: [`til:${slug}`],
@@ -98,7 +98,7 @@ export async function generateStaticParams() {
 }
 
 export default async function TILDetail({ params }: Props) {
-  const slug = params.post;
+  const { post: slug } = await params;
   const til: TILType = await sanityFetch({
     query: singleTilQuery,
     tags: [`til:${slug}`],
