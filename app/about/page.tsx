@@ -3,14 +3,14 @@ import { Metadata } from "next";
 import { profileQuery } from "@/lib/sanity.query";
 import type { ProfileType } from "@/types";
 import { PortableText } from "@portabletext/react";
-import { BiEnvelope, BiLinkExternal, BiSolidDownload } from "react-icons/bi";
+import { BiEnvelope, BiSolidDownload } from "react-icons/bi";
 import { CustomPortableText } from "../components/shared/CustomPortableText";
 import TechStack from "../components/pages/TechStack";
 import { Slide } from "../animation/Slide";
 import { FadeIn } from "../animation/FadeIn";
 import { ScaleIn } from "../animation/ScaleIn";
 import { sanityFetch } from "@/lib/sanity.client";
-import RefLink from "../components/shared/RefLink";
+import ResumeButton from "@/app/components/shared/ResumeButton";
 
 export const metadata: Metadata = {
   title: "About | Jubair Amin",
@@ -172,17 +172,9 @@ export default async function About() {
 
               {/* CTA Buttons */}
               <div className="mt-8 space-y-3">
-                <RefLink
-                  href="https://www.craft.me/s/WQpQF3jrPIodXp"
-                  className="group flex items-center justify-between px-6 py-4 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 rounded-lg font-medium transition-all duration-300 hover:bg-zinc-800 dark:hover:bg-zinc-100 border-2 border-zinc-900 dark:border-white hover:scale-[1.02] shadow-lg hover:shadow-xl"
-                >
-                  <div className="flex items-center gap-2">
-                    <span className="font-mono text-sm">$</span>
-                    <span className="font-mono text-sm">cat resume.pdf</span>
-                  </div>
-                  <BiLinkExternal className="text-lg group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-                </RefLink>
-                
+                {/* View Resume Button */}
+                <ResumeButton />
+
                 <div className="grid grid-cols-2 gap-3">
                   <a
                     href={`${profile?.resumeURL}?dl=${profile?.fullName}-resume.pdf`}

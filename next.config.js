@@ -15,6 +15,31 @@ const nextConfig = {
       { hostname: "cdn.simpleicons.org" },
     ],
   },
+  async headers() {
+    return [
+      {
+        source: '/resume.pdf',
+        headers: [
+          {
+            key: 'Content-Type',
+            value: 'application/pdf',
+          },
+          {
+            key: 'Content-Disposition',
+            value: 'inline; filename="Jubair-Siyum-Resume.pdf"',
+          },
+          {
+            key: 'X-Content-Type-Options',
+            value: 'nosniff',
+          },
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
