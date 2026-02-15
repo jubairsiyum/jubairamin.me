@@ -3,7 +3,11 @@
 import { useState } from "react";
 import ResumeModal from "./ResumeModal";
 
-export default function ResumeButton() {
+interface ResumeButtonProps {
+  resumeURL?: string;
+}
+
+export default function ResumeButton({ resumeURL }: ResumeButtonProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
@@ -16,7 +20,7 @@ export default function ResumeButton() {
         <span>$ cat resume.pdf</span>
       </button>
 
-      <ResumeModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+      <ResumeModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} resumeURL={resumeURL} />
     </>
   );
 }

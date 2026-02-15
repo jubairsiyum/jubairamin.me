@@ -6,9 +6,10 @@ import { BiX } from "react-icons/bi";
 interface ResumeModalProps {
   isOpen: boolean;
   onClose: () => void;
+  resumeURL?: string;
 }
 
-export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
+export default function ResumeModal({ isOpen, onClose, resumeURL }: ResumeModalProps) {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
@@ -71,12 +72,18 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
         {/* PDF Content - Inline Display */}
         <div className="flex-1 overflow-auto bg-zinc-100 dark:bg-zinc-950 p-4">
           <div className="w-full h-full min-h-[600px] bg-white dark:bg-zinc-900 rounded-lg shadow-inner">
-            <iframe
-              src="/resume.pdf#view=FitH&toolbar=0&navpanes=0"
-              className="w-full h-full border-0 rounded-lg"
-              title="Resume PDF Viewer"
-              style={{ minHeight: '600px' }}
-            />
+            {resumeURL ? (
+              <iframe
+                src={`${resumeURL}#view=FitH&toolbar=0&navpanes=0`}
+                className="w-full h-full border-0 rounded-lg"
+                title="Resume PDF Viewer"
+                style={{ minHeight: '600px' }}
+              />
+            ) : (
+              <div className="flex items-center justify-center h-full">
+                <p className="text-zinc-500 dark:text-zinc-400 font-mono text-sm">No resume URL available</p>
+              </div>
+            )}
           </div>
         </div>
       </div>

@@ -173,7 +173,7 @@ export default async function About() {
               {/* CTA Buttons */}
               <div className="mt-8 space-y-3">
                 {/* View Resume Button */}
-                <ResumeButton />
+                <ResumeButton resumeURL={profile?.resumeURL} />
 
                 <div className="grid grid-cols-2 gap-3">
                   <a
